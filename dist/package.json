@@ -1,0 +1,32 @@
+{
+  "name": "image-blob-reduce",
+  "version": "4.1.0",
+  "description": "High quality image resize in browser for blobs (`pica` wrapper with some sugar)",
+  "keywords": [
+    "resize",
+    "scale",
+    "image",
+    "lanczos",
+    "canvas",
+    "blob"
+  ],
+  "repository": "nodeca/image-blob-reduce",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib/",
+    "dist/"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./lib/image_traverse.js": "./lib/image_traverse.js",
+    ".": {
+      "import": "./image-blob-reduce.esm.mjs"
+    }
+  },
+  "module": "./image-blob-reduce.esm.mjs",
+  "dependencies": {
+    "pica": "^9.0.0"
+  },
+  "devDependencies": {}
+}

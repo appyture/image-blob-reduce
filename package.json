@@ -34,7 +34,8 @@
     "demo": "node support/build_demo.js",
     "gh-pages": "npm run demo && gh-pages -d demo -f",
     "build": "rollup -c support/rollup.config.js",
-    "prepublishOnly": "npm run gh-pages"
+    "prepublishOnly": "npm run gh-pages",
+    "esbuild": "npx esbuild index.js --bundle --format=esm --outfile=dist/image-blob-reduce.esm.mjs"
   },
   "dependencies": {
     "pica": "^9.0.0"
@@ -49,5 +50,8 @@
     "rollup": "^2.29.0",
     "rollup-plugin-terser": "^7.0.2",
     "shelljs": "^0.8.4"
+  },
+  "optionalDependencies": {
+    "esbuild": "^0.17.7"
   }
 }
